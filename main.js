@@ -40,6 +40,7 @@ clearAction.forEach(element => {
     })
 })
 
-
+// display the action of the calculator by pressing the button
+const calculatorDisplay = document.querySelectorAll(".calcuator-display")
 
 
