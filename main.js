@@ -1,8 +1,8 @@
 // select the button in the caluator
 const numberKeys = document.querySelectorAll(".number");
 const demicalkey = document.querySelectorAll(".number-decimal");
-const actionKey = document.querySelectorAll(".button-action");
-const clearaction = document.querySelectorAll(".button-action-clear");
+const operationKey = document.querySelectorAll(".button-action");
+const clearAction = document.querySelectorAll(".button-action-clear");
 // console.log(numberKeys)
 
 
@@ -20,23 +20,23 @@ demicalkey.forEach(element => {
     element.addEventListener("click", (e) => {
         if (e.target.matches('button')) { 
         }
-        console.log(demical-key)
+        console.log('demical-key')
     })
 })
 
-actionKey.forEach(element => {
+operationKey.forEach(element => {
     element.addEventListener("click", (e) => {
         if (e.target.matches('button')) { 
         }
-        console.log(action-key)
+        console.log('operation-key')
     })
 })
 
-clearaction.forEach(element => {
+clearAction.forEach(element => {
     element.addEventListener("click", (e) => {
         if (e.target.matches('button')) { 
         }
-        console.log(clear-key)
+        console.log('clear-key')
     })
 })
 
