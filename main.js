@@ -49,16 +49,16 @@ calculatorDisplay.addEventListener('click', (event) => {
     if (!e.target.matches('button')) {
         return;
     }
-    if (e.target.classLift.contains('numberKey')) {
+    if (e.target.classLift.contains('number')) {
         return;
     }
-    if (e.target.classLift.contains('operationKey')) {
+    if (e.target.classLift.contains('number-decimal')) {
         return;
     }
-    if (e.target.classLift.contains('demicalkey')) {
+    if (e.target.classLift.contains('button-action')) {
         return;
     }
-    if (e.target.classLift.contains('clearAction')) {
+    if (e.target.classLift.contains('button-action-clear')) {
         return;
     }
 console.log (calculatorDisplay)
