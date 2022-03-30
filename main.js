@@ -61,3 +61,4 @@ calculatorDisplay.addEventListener('click', (event) => {
     if (e.target.classLift.contains('clearAction')) {
         return;
     }
+}
