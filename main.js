@@ -10,7 +10,7 @@ const clearAction = document.querySelectorAll(".button-action-clear");
 // document.getElementById(number).addEventListener("click", () => console.log ('clicked!'));
 numberKeys.forEach(element => {
     element.addEventListener("click", (e) => {
-        if (e.target.matches('button')) { 
+        if (e.target.matches('button')) {
         }
         console.log(e.target.innerHTML)
     })
@@ -18,7 +18,7 @@ numberKeys.forEach(element => {
 
 demicalkey.forEach(element => {
     element.addEventListener("click", (e) => {
-        if (e.target.matches('button')) { 
+        if (e.target.matches('button')) {
         }
         console.log('demical-key')
     })
@@ -26,7 +26,7 @@ demicalkey.forEach(element => {
 
 operationKey.forEach(element => {
     element.addEventListener("click", (e) => {
-        if (e.target.matches('button')) { 
+        if (e.target.matches('button')) {
         }
         console.log('operation-key')
     })
@@ -34,7 +34,7 @@ operationKey.forEach(element => {
 
 clearAction.forEach(element => {
     element.addEventListener("click", (e) => {
-        if (e.target.matches('button')) { 
+        if (e.target.matches('button')) {
         }
         console.log('clear-key')
     })
@@ -43,4 +43,21 @@ clearAction.forEach(element => {
 // display the action of the calculator by pressing the button
 const calculatorDisplay = document.querySelectorAll(".calcuator-display")
 
+calculatorDisplay.addEventListener('click', (event) => {
+    const target = e.target;
 
+    if (!e.target.matches('button')) {
+        return;
+    }
+    if (e.target.classLift.contains('numberKey')) {
+        return;
+    }
+    if (e.target.classLift.contains('operationKey')) {
+        return;
+    }
+    if (e.target.classLift.contains('demicalkey')) {
+        return;
+    }
+    if (e.target.classLift.contains('clearAction')) {
+        return;
+    }
